@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jasa Pompa Air Sanyo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f5f5f5}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  position:absolute;
+  width:100%;
+  color:#000;
+}
+nav .logo{font-weight:700;font-size:22px}
+nav ul{display:flex;gap:30px;list-style:none}
+nav button{
+  background:#000;
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+  border-radius:20px;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#ffcc00,#ff9900);
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 80px;
+  color:#000;
+}
+.hero-text{max-width:500px}
+.hero h1{font-size:48px;font-weight:700;margin-bottom:20px}
+.hero p{margin-bottom:20px}
+.hero button{
+  background:#000;
+  color:#fff;
+  border:none;
+  padding:12px 25px;
+  border-radius:25px;
+  cursor:pointer;
+}
+.hero img{
+  width:400px;
+  border-radius:20px;
+}
+
+/* SECTION */
+.section{
+  background:#fff;
+  margin-top:-100px;
+  border-radius:60px 60px 0 0;
+  padding:60px;
+  text-align:center;
+}
+.cards{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  margin-top:40px;
+}
+.card{
+  background:#f8f8f8;
+  padding:30px;
+  border-radius:20px;
+  width:250px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.card h3{margin:15px 0}
+.card button{
+  margin-top:10px;
+  padding:8px 20px;
+  border:none;
+  background:#ffcc00;
+  border-radius:20px;
+}
+
+/* SECOND */
+.second{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px;
+}
+.second img{
+  width:350px;
+  border-radius:50%;
+}
+.second .text{max-width:500px}
+.second ul{margin-top:20px}
+.second button{
+  margin-top:20px;
+  padding:10px 20px;
+  border:none;
+  background:#ffcc00;
+  border-radius:20px;
+}
+
+/* FLOATING WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px 18px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+footer{
+  background:#111;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+@media(max-width:768px){
+.hero{flex-direction:column;text-align:center;height:auto;padding:100px 20px}
+.cards{flex-direction:column;align-items:center}
+.second{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Sanyo Service</div>
+  <ul>
+    <li>Beranda</li>
+    <li>Layanan</li>
+    <li>Tentang</li>
+    <li>Kontak</li>
+  </ul>
+  <button onclick="window.open('https://wa.me/6281234567890')">Hubungi</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Jasa Pompa Air Sanyo Profesional & Terpercaya</h1>
+    <p>Melayani bor sumur, instalasi pompa Sanyo, servis & perawatan dengan teknisi berpengalaman.</p>
+    <button onclick="window.open('https://wa.me/6281234567890')">Pesan Sekarang</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Tukang Profesional">
+</section>
+
+<section class="section">
+  <h2>Layanan Kami</h2>
+  <p>Kami menyediakan berbagai layanan pompa air Sanyo terbaik untuk rumah Anda</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Bor Sumur</h3>
+      <p>Pembuatan sumur baru dengan alat modern dan cepat.</p>
+      <button>Detail</button>
+    </div>
+
+    <div class="card">
+      <h3>Pasang Pompa</h3>
+      <p>Instalasi pompa Sanyo otomatis & manual.</p>
+      <button>Detail</button>
+    </div>
+
+    <div class="card">
+      <h3>Service</h3>
+      <p>Perbaikan pompa air mati, bocor atau lemah.</p>
+      <button>Detail</button>
+    </div>
+  </div>
+</section>
+
+<section class="second">
+  <div class="text">
+    <h2>Kenapa Pilih Kami?</h2>
+    <ul>
+      <li>✔ Teknisi berpengalaman</li>
+      <li>✔ Harga terjangkau</li>
+      <li>✔ Garansi pekerjaan</li>
+    </ul>
+    <button onclick="window.open('https://wa.me/6281234567890')">Hubungi Kami</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Teknisi">
+</section>
+
+<a class="whatsapp" href="https://wa.me/6281234567890" target="_blank">Chat WA</a>
+
+<footer>
+  <p>© 2026 Jasa Pompa Air Sanyo</p>
+</footer>
+
+</body>
+</html>
