@@ -3,201 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jasa Pompa Air Sanyo</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-body{background:#f5f5f5}
-
-/* NAVBAR */
-nav{
-  display:flex;
-  justify-content:space-between;
-  padding:20px 60px;
-  position:absolute;
-  width:100%;
-  color:#000;
-}
-nav .logo{font-weight:700;font-size:22px}
-nav ul{display:flex;gap:30px;list-style:none}
-nav button{
-  background:#000;
-  color:#fff;
-  border:none;
-  padding:10px 20px;
-  border-radius:20px;
-}
-
-/* HERO */
-.hero{
-  background:linear-gradient(135deg,#ffcc00,#ff9900);
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 80px;
-  color:#000;
-}
-.hero-text{max-width:500px}
-.hero h1{font-size:48px;font-weight:700;margin-bottom:20px}
-.hero p{margin-bottom:20px}
-.hero button{
-  background:#000;
-  color:#fff;
-  border:none;
-  padding:12px 25px;
-  border-radius:25px;
-  cursor:pointer;
-}
-.hero img{
-  width:400px;
-  border-radius:20px;
-}
-
-/* SECTION */
-.section{
-  background:#fff;
-  margin-top:-100px;
-  border-radius:60px 60px 0 0;
-  padding:60px;
-  text-align:center;
-}
-.cards{
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  margin-top:40px;
-}
-.card{
-  background:#f8f8f8;
-  padding:30px;
-  border-radius:20px;
-  width:250px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-.card h3{margin:15px 0}
-.card button{
-  margin-top:10px;
-  padding:8px 20px;
-  border:none;
-  background:#ffcc00;
-  border-radius:20px;
-}
-
-/* SECOND */
-.second{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:80px;
-}
-.second img{
-  width:350px;
-  border-radius:50%;
-}
-.second .text{max-width:500px}
-.second ul{margin-top:20px}
-.second button{
-  margin-top:20px;
-  padding:10px 20px;
-  border:none;
-  background:#ffcc00;
-  border-radius:20px;
-}
-
-/* FLOATING WHATSAPP */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:15px 18px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:600;
-  box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-footer{
-  background:#111;
-  color:#fff;
-  text-align:center;
-  padding:20px;
-}
-
-@media(max-width:768px){
-.hero{flex-direction:column;text-align:center;height:auto;padding:100px 20px}
-.cards{flex-direction:column;align-items:center}
-.second{flex-direction:column;text-align:center}
-}
-</style>
+<title>AquaFix - Jasa Pompa Air 24/7</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav>
-  <div class="logo">Sanyo Service</div>
-  <ul>
-    <li>Beranda</li>
-    <li>Layanan</li>
-    <li>Tentang</li>
-    <li>Kontak</li>
+  <div class="logo">
+    <div class="logo-icon">💧</div>
+    AquaFix
+  </div>
+  <ul class="nav-links">
+    <li><a href="#fitur">Fitur</a></li>
+    <li><a href="#layanan">Layanan</a></li>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+    <li><a href="https://wa.me/6281909944999" class="nav-cta" target="_blank">📞 Hubungi Kami</a></li>
   </ul>
-  <button onclick="window.open('https://wa.me/6281234567890')">Hubungi</button>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-text">
-    <h1>Jasa Pompa Air Sanyo Profesional & Terpercaya</h1>
-    <p>Melayani bor sumur, instalasi pompa Sanyo, servis & perawatan dengan teknisi berpengalaman.</p>
-    <button onclick="window.open('https://wa.me/6281234567890')">Pesan Sekarang</button>
-  </div>
-  <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Tukang Profesional">
-</section>
-
-<section class="section">
-  <h2>Layanan Kami</h2>
-  <p>Kami menyediakan berbagai layanan pompa air Sanyo terbaik untuk rumah Anda</p>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Bor Sumur</h3>
-      <p>Pembuatan sumur baru dengan alat modern dan cepat.</p>
-      <button>Detail</button>
-    </div>
-
-    <div class="card">
-      <h3>Pasang Pompa</h3>
-      <p>Instalasi pompa Sanyo otomatis & manual.</p>
-      <button>Detail</button>
-    </div>
-
-    <div class="card">
-      <h3>Service</h3>
-      <p>Perbaikan pompa air mati, bocor atau lemah.</p>
-      <button>Detail</button>
+  <div class="hero-content">
+    <p class="hero-label">⚡ Respons Cepat 24 Jam</p>
+    <h1 class="hero-title">
+      Jasa Pompa Air<br>
+      yang Bisa Kamu<br>
+      <span>Andalkan</span>
+    </h1>
+    <p class="hero-desc">
+      Spesialis pemasangan, perbaikan, dan perawatan pompa air rumah & industri. Tim ahli berpengalaman siap datang ke lokasi Anda kapan saja.
+    </p>
+    <div class="hero-btns">
+      <a href="https://wa.me/6281909944999?text=Halo,%20saya%20butuh%20jasa%20pompa%20air" class="btn-primary" target="_blank">
+        📲 Hubungi Sekarang
+      </a>
+      <a href="#layanan" class="btn-outline">Lihat Layanan →</a>
     </div>
   </div>
-</section>
+  <div></div>
 
-<section class="second">
-  <div class="text">
-    <h2>Kenapa Pilih Kami?</h2>
-    <ul>
-      <li>✔ Teknisi berpengalaman</li>
-      <li>✔ Harga terjangkau</li>
-      <li>✔ Garansi pekerjaan</li>
-    </ul>
-    <button onclick="window.open('https://wa.me/6281234567890')">Hubungi Kami</button>
+  <div class="blob-1"></div>
+  <div class="blob-2">
+    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&q=80" alt="Teknisi pompa air" onerror="this.parentElement.innerHTML='🔧'">
   </div>
-  <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" alt="Teknisi">
+  <div class="blob-3"></div>
+  <div class="blob-4"></div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/6281234567890" target="_blank">Chat WA</a>
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">500+</div>
+    <div class="stat-label">Pelanggan Puas</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">24/7</div>
+    <div class="stat-label">Siap Melayani</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">10+</div>
+    <div class="stat-label">Tahun Pengalaman</div>
+  </div>
+  <div class="stat-divider"></div>
+  <div class="stat-item">
+    <div class="stat-num">1 Jam</div>
+    <div class="stat-label">Estimasi Tiba</div>
+  </div>
+</div>
 
+<!-- FEATURES -->
+<section class="features" id="fitur">
+  <div class="section-tag">✅ Keunggulan Kami</div>
+  <h2 class="section-title">Mengapa Pilih<br>AquaFix?</h2>
+  <p class="section-desc">Kami memberikan solusi terbaik untuk setiap masalah pompa air Anda dengan teknisi berpengalaman dan peralatan modern.</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-title">Respons Cepat</div>
+      <p class="feature-desc">Tim kami siap merespons panggilan darurat dalam 30 menit dan tiba di lokasi maksimal 1 jam.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🛠️</div>
+      <div class="feature-title">Teknisi Bersertifikat</div>
+      <p class="feature-desc">Seluruh teknisi kami telah bersertifikat dan berpengalaman lebih dari 5 tahun di bidang pompa air.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">💰</div>
+      <div class="feature-title">Harga Transparan</div>
+      <p class="feature-desc">Estimasi biaya diberikan sebelum pekerjaan dimulai. Tidak ada biaya tersembunyi atau kejutan di akhir.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-title">Garansi Kerja</div>
+      <p class="feature-desc">Setiap pekerjaan kami dilengkapi garansi 3 bulan. Jika ada masalah, kami datang kembali gratis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="layanan">
+  <div class="section-tag">🔧 Yang Kami Kerjakan</div>
+  <h2 class="section-title">Layanan Pompa Air</h2>
+  <p class="section-desc">Semua kebutuhan pompa air rumah tangga maupun industri kami tangani dengan profesional.</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon">🔩</div>
+      <div class="service-title">Pemasangan Pompa Baru</div>
+      <p class="service-desc">Instalasi pompa air baru untuk rumah, gedung, atau kawasan industri. Kami bantu pilih pompa yang sesuai kebutuhan dan budget Anda.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon">🔧</div>
+      <div class="service-title">Perbaikan & Servis</div>
+      <p class="service-desc">Pompa mati, tidak nyedot, atau berbunyi aneh? Teknisi kami siap mendiagnosis dan memperbaiki dengan cepat dan tepat.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon">🏗️</div>
+      <div class="service-title">Pengeboran Sumur</div>
+      <p class="service-desc">Layanan pengeboran sumur dalam maupun sumur bor untuk memastikan sumber air bersih yang memadai di lokasi Anda.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-icon">🔄</div>
+      <div class="service-title">Penggantian Spare Part</div>
+      <p class="service-desc">Tersedia berbagai spare part pompa air original dari merek terkemuka. Penggantian cepat dengan garansi suku cadang.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <div class="service-icon">📋</div>
+      <div class="service-title">Perawatan Berkala</div>
+      <p class="service-desc">Paket servis rutin bulanan atau tahunan untuk menjaga performa pompa air tetap optimal dan mencegah kerusakan mendadak.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <div class="service-icon">🏭</div>
+      <div class="service-title">Pompa Industri</div>
+      <p class="service-desc">Solusi pompa air skala besar untuk industri, hotel, perumahan, dan gedung komersial. Konsultasi gratis sebelum pengerjaan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section" id="tentang">
+  <div class="cta-image-wrap">
+    <div class="cta-blob">🔧</div>
+    <div class="cta-badge">
+      <div class="badge-icon">⭐</div>
+      <div>
+        <div class="badge-num">4.9 / 5.0</div>
+        <div class="badge-text">Rating dari 500+ pelanggan</div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="section-tag">💡 Siap Bantu Anda</div>
+    <h2 class="section-title">Masalah Pompa Air?<br>Biarkan Kami<br>Selesaikan</h2>
+    <p class="section-desc">Dengan pengalaman lebih dari 10 tahun, kami telah melayani ratusan pelanggan di seluruh kota. Kepuasan Anda adalah prioritas utama kami.</p>
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20konsultasi%20masalah%20pompa%20air" class="btn-primary" target="_blank">
+      💬 Konsultasi Gratis
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="kontak">
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="section-tag">📬 Kontak Kami</div>
+      <h2>Hubungi Kami<br>Sekarang</h2>
+      <p>Ada pertanyaan atau butuh bantuan darurat? Jangan ragu menghubungi kami melalui berbagai saluran di bawah ini.</p>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">📱</div>
+        <div>
+          <div class="contact-detail-label">WhatsApp / Telepon</div>
+          <div class="contact-detail-val">
+            <a href="https://wa.me/6281909944999" target="_blank">+62 819-0994-4999</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">📞</div>
+        <div>
+          <div class="contact-detail-label">Telepon Darurat 24 Jam</div>
+          <div class="contact-detail-val">
+            <a href="tel:+62895370800896">+62895370800896</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">📧</div>
+        <div>
+          <div class="contact-detail-label">Email</div>
+          <div class="contact-detail-val">
+            <a href="mailto:avdsoutiondigital99@gmail.com">avdsoutiondigital99@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">📍</div>
+        <div>
+          <div class="contact-detail-label">Alamat</div>
+          <div class="contact-detail-val">Jl. Raya Plered - Cirebon, Pilangsari, Kec. Kedawung, Kabupaten Cirebon, Jawa Barat</div>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon-wrap">🕐</div>
+        <div>
+          <div class="contact-detail-label">Jam Operasional</div>
+          <div class="contact-detail-val">24 Jam / 7 Hari Seminggu</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <div class="form-title">📝 Kirim Pesan</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" placeholder="Budi Santoso">
+        </div>
+        <div class="form-group">
+          <label>Nomor HP</label>
+          <input type="tel" placeholder="08xx-xxxx-xxxx">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Alamat Lokasi</label>
+        <input type="text" placeholder="Jl. Mawar No. 10, Jakarta">
+      </div>
+      <div class="form-group">
+        <label>Jenis Layanan</label>
+        <select>
+          <option value="">-- Pilih Layanan --</option>
+          <option>Pemasangan Pompa Baru</option>
+          <option>Perbaikan / Servis Pompa</option>
+          <option>Pengeboran Sumur</option>
+          <option>Penggantian Spare Part</option>
+          <option>Perawatan Berkala</option>
+          <option>Pompa Industri</option>
+          <option>Konsultasi</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Keterangan Masalah</label>
+        <textarea placeholder="Ceritakan masalah pompa air Anda di sini..."></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">
+        📲 Kirim via WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+<!-- FOOTER -->
 <footer>
-  <p>© 2026 Jasa Pompa Air Sanyo</p>
+  <div>© 2024 <span>AquaFix</span>. Semua Hak Dilindungi.</div>
+  <div>🌊 Solusi Pompa Air Terpercaya Indonesia</div>
+  <div>Dibuat dengan ❤️ untuk pelanggan setia kami</div>
 </footer>
 
+<!-- WA FLOAT BUTTON -->
+<a href="https://wa.me/6281909944999?text=Halo%20AquaFix,%20saya%20butuh%20bantuan%20pompa%20air" class="wa-float" target="_blank" title="Chat WhatsApp">
+  💬
+</a>
+<script src="script.js"></script>
 </body>
 </html>
