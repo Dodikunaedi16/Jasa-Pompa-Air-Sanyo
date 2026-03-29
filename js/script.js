@@ -1,33 +1,51 @@
- function submitForm() {
-    const nama = document.querySelector('input[placeholder="Budi Santoso"]').value;
-    const hp = document.querySelector('input[placeholder="08xx-xxxx-xxxx"]').value;
-    const alamat = document.querySelector('input[placeholder="Jl. Mawar No. 10, Jakarta"]').value;
-    const layanan = document.querySelector('select').value;
-    const masalah = document.querySelector('textarea').value;
+// Ganti nomor WA kamu di sini
+var WA_NUMBER = '6281909944999';
 
-    if (!nama || !hp) {
-      alert('Harap isi nama dan nomor HP Anda.');
-      return;
-    }
+function submitForm() {
+  var nama    = document.getElementById('nama').value.trim();
+  var hp      = document.getElementById('hp').value.trim();
+  var alamat  = document.getElementById('alamat').value.trim();
+  var layanan = document.getElementById('layanan').value;
+  var masalah = document.getElementById('masalah').value.trim();
 
-    const msg = `Halo AquaFix! 👋\n\nSaya ingin pesan layanan:\n\n👤 Nama: ${nama}\n📱 HP: ${hp}\n📍 Alamat: ${alamat || '-'}\n🔧 Layanan: ${layanan || '-'}\n📝 Masalah: ${masalah || '-'}\n\nMohon bantuannya. Terima kasih!`;
-    const url = `https://wa.me/6281909944999?text=${encodeURIComponent(msg)}`;
-    window.open(url, '_blank');
+  if (!nama || !hp) {
+    alert('Harap isi Nama dan Nomor HP terlebih dahulu.');
+    return;
   }
 
-  // Scroll reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
+  var pesan =
+    'Halo AquaFix! 👋' + '\n\n' +
+    'Saya ingin memesan layanan:' + '\n\n' +
+    '👤 Nama    : ' + nama + '\n' +
+    '📱 HP      : ' + hp + '\n' +
+    '📍 Alamat  : ' + (alamat  || '-') + '\n' +
+    '🔧 Layanan : ' + (layanan || '-') + '\n' +
+    '📝 Masalah : ' + (masalah || '-') + '\n\n' +
+    'Mohon bantuannya. Terima kasih!';
+
+  var url = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(pesan);
+  window.location.href = url;
+}
+
+// Scroll reveal
+document.addEventListener('DOMContentLoaded', function () {
+  var els = document.querySelectorAll('.feature-card, .service-card, .contact-item');
+  els.forEach(function (el) { el.classList.add('reveal'); });
+
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
       }
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.feature-card, .service-card, .contact-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
+  els.forEach(function (el) { obs.observe(el); });
+
+  // Navbar shadow
+  var nav = document.querySelector('nav');
+  window.addEventListener('scroll', function () {
+    nav.style.boxShadow = window.scrollY > 50 ? '0 4px 24px rgba(26,39,68,0.1)' : 'none';
   });
+});
